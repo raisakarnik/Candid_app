@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  News
-//
-//  Created by Raisa Karnik on 7/6/21.
-//
-
 import UIKit
 
 class HomeViewController: UIViewController {
@@ -17,10 +10,9 @@ class HomeViewController: UIViewController {
         
         let viewButton = UIButton()
         viewButton.setTitle("View Articles", for: .normal)
-        //viewButton.font = UIFont(name: "Times New Roman", size: 40)!
         viewButton.backgroundColor = #colorLiteral(red: 0.08235294118, green: 0.01960784314, blue: 0.4705882353, alpha: 1)
         viewButton.layer.cornerRadius = 50
-        viewButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 25)
+        viewButton.titleLabel?.font = UIFont(name: "Avenir", size: 30)
         view.addSubview(viewButton)
         viewButton.translatesAutoresizingMaskIntoConstraints = false
         viewButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
@@ -31,10 +23,9 @@ class HomeViewController: UIViewController {
         
         let pubButton = UIButton()
         pubButton.setTitle("Publish Story", for: .normal)
-        //pubButton.font = UIFont(name: "Times New Roman", size: 40)!
         pubButton.backgroundColor = #colorLiteral(red: 1, green: 0.7490196078, blue: 0, alpha: 1)
         pubButton.layer.cornerRadius = 50
-        pubButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 25)
+        pubButton.titleLabel?.font = UIFont(name: "Avenir", size: 30)
         view.addSubview(pubButton)
         pubButton.translatesAutoresizingMaskIntoConstraints = false
         pubButton.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50).isActive = true
@@ -76,7 +67,7 @@ class HomeViewController: UIViewController {
         let welc = UILabel()
         view.addSubview(welc)
         welc.text = "Welcome"
-        welc.font = UIFont(name: "Times New Roman", size: 80)
+        welc.font = UIFont(name: "Georgia", size: 80)
         welc.textAlignment = .center
         welc.translatesAutoresizingMaskIntoConstraints = false
         welc.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
