@@ -1,17 +1,10 @@
-//
-//  WriteStory.swift
-//  News
-//
-//  Created by Raisa Karnik on 9/6/21.
-//
-
 import SwiftUI
 import Firebase
 import FirebaseDatabase
 
 class PublishViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     
-    //var refStory: DatabaseReference!
+   
     var refStory = Database.database().reference()
     var emailArray = [Any]()
     var otherC = 0
@@ -54,7 +47,7 @@ class PublishViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         pubLabel.center = CGPoint(x: UIScreen.main.bounds.maxX / 2 , y: UIScreen.main.bounds.maxY / 7)
         pubLabel.textAlignment = .center
         pubLabel.text = "Publish"
-        pubLabel.font = UIFont(name: "Helvetica Bold", size: 60)
+        pubLabel.font = UIFont(name: "Avenir-Medium", size: 60)
         configText()
         
         
@@ -153,7 +146,7 @@ class PublishViewController: UIViewController, UITextFieldDelegate, UITextViewDe
             writeTxtWorld.font = UIFont(name: "Helvetica Neue", size: 20)
             writeTxtNational.font = UIFont(name: "Helvetica Neue", size: 20)
         
-        // the random background colors
+        // background colors
             writeTxt.backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9725490196, blue: 1, alpha: 1)
             writeTxtNational.backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9725490196, blue: 1, alpha: 1)
         writeTxtWorld.backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9725490196, blue: 1, alpha: 1)
@@ -260,7 +253,7 @@ class PublishViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     
     
     
-    // resign 2 electric bogaloo 
+    // resign
     @objc func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         titleTxt.resignFirstResponder()
         authorTxt.resignFirstResponder()
@@ -303,7 +296,7 @@ class PublishViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     
     // pass data to Firebase
     @objc private func buttonTappedPub(_ recognizer: UITapGestureRecognizer) {
-        //priorEmail()
+        
         addElements()
     }
 
