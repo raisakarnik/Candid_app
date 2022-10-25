@@ -1,10 +1,3 @@
-//
-//  LocalViewController.swift
-//  News
-//
-//  Created by Raisa Karnik on 7/26/21.
-//
-
 import UIKit
 import Firebase
 import FirebaseDatabase
@@ -103,15 +96,11 @@ extension WeeklyViewController: UITableViewDelegate, UITableViewDataSource{
         return self.stories.count
     }
     
-
-    
-    
     func tableView(_ tableView: UITableView,
                    heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
 
-// i dunno bout this chief
     func tableView(_ tableView: UITableView,
                    viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 50))
@@ -122,28 +111,13 @@ extension WeeklyViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     
-    
-    
-    
-    
-    
     func tableView( _ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let model = self.stories[indexPath.row]
        
         let cell = tableView.dequeueReusableCell(withIdentifier: WeeklyTableViewCell.identifier, for: indexPath) as! WeeklyTableViewCell
         cell.configure(with: model)
-        
         cell.backgroundColor = #colorLiteral(red: 0.9647058824, green: 0.9725490196, blue: 1, alpha: 1)
-        cell.layer.borderWidth = 1
-        cell.layer.cornerRadius = 10
-        //cell.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
-        /*cell.layer.shadowOffset = CGSize(width: -2,height: 7)
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowRadius = 4
-        cell.layer.shadowOpacity = 0.25
-        cell.layer.masksToBounds = false;
-        cell.clipsToBounds = false;*/
         
         return cell
     }
