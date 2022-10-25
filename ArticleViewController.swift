@@ -1,10 +1,3 @@
-//
-//  ArticleViewController.swift
-//  News
-//
-//  Created by Raisa Karnik on 3/28/22.
-//
-
 import UIKit
 
 class ArticleViewController: UIViewController {
@@ -59,7 +52,7 @@ class ArticleViewController: UIViewController {
         //title format
         let titleLabel = UILabel()
         titleLabel.text = model.title
-        titleLabel.font = UIFont(name: "Times New Roman", size: 35)
+        titleLabel.font = UIFont(name: "Georgia", size: 35)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(titleLabel)
         titleLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 40).isActive = true
@@ -70,7 +63,7 @@ class ArticleViewController: UIViewController {
         //author format
         let authorLabel = UILabel()
         authorLabel.text = model.author
-        authorLabel.font = UIFont(name: "Times New Roman", size: 16)
+        authorLabel.font = UIFont(name: "Georgia", size: 16)
         authorLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(authorLabel)
         authorLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 40).isActive = true
@@ -81,7 +74,7 @@ class ArticleViewController: UIViewController {
         //local discriptive label
         let d1Label = UILabel()
         d1Label.text = "Local News"
-        d1Label.font = UIFont(name: "Times New Roman", size: 20)
+        d1Label.font = UIFont(name: "Georgia", size: 20)
         d1Label.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(d1Label)
         d1Label.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 5).isActive = true
@@ -92,7 +85,7 @@ class ArticleViewController: UIViewController {
         //local format
         let localLabel = UILabel()
         localLabel.text = model.local
-        localLabel.font = UIFont(name: "Times New Roman", size: 18)
+        localLabel.font = UIFont(name: "Georgia", size: 18)
         localLabel.numberOfLines = 0
         localLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(localLabel)
@@ -103,7 +96,7 @@ class ArticleViewController: UIViewController {
         //national discriptive label
         let d2Label = UILabel()
         d2Label.text = "National News"
-        d2Label.font = UIFont(name: "Times New Roman", size: 20)
+        d2Label.font = UIFont(name: "Georgia", size: 20)
         d2Label.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(d2Label)
         d2Label.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 5).isActive = true
@@ -117,7 +110,7 @@ class ArticleViewController: UIViewController {
         //national format
         let nationalLabel = UILabel()
         nationalLabel.text = model.national
-        nationalLabel.font = UIFont(name: "Times New Roman", size: 18)
+        nationalLabel.font = UIFont(name: "Georgia", size: 18)
         nationalLabel.numberOfLines = 0
         nationalLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(nationalLabel)
@@ -130,7 +123,7 @@ class ArticleViewController: UIViewController {
         //world discriptive label
         let d3Label = UILabel()
         d3Label.text = "Global News"
-        d3Label.font = UIFont(name: "Times New Roman", size: 20)
+        d3Label.font = UIFont(name: "Georgia", size: 20)
         d3Label.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(d3Label)
         d3Label.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 5).isActive = true
@@ -145,7 +138,7 @@ class ArticleViewController: UIViewController {
         //world format
         let worldLabel = UILabel()
         worldLabel.text = model.world
-        worldLabel.font = UIFont(name: "Times New Roman", size: 18)
+        worldLabel.font = UIFont(name: "Georgia", size: 18)
         worldLabel.numberOfLines = 0
         worldLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(worldLabel)
@@ -163,3 +156,4 @@ class ArticleViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 }
+
